@@ -199,7 +199,8 @@ export default function Home() {
 
     return (
         <>
-            <div className='grid grid-cols-3 gap-2'>
+            <div className='grid grid-cols-4 gap-2'>
+            <h1 className='z-20 text-grey-500 text-center text-3xl'>SmartSlate </h1>
                 <Button
                     onClick={() => setReset(true)}
                     className='z-20 bg-black text-white'
@@ -208,7 +209,7 @@ export default function Home() {
                 >
                     Reset
                 </Button>
-                <Group className='z-20'>
+                <Group className='z-40'>
                     {SWATCHES.map((swatch) => (
                         <ColorSwatch key={swatch} color={swatch} onClick={() => setColor(swatch)} />
                     ))}
